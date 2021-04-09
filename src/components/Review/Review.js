@@ -25,7 +25,7 @@ const Review = () => {
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
 
-        fetch('https://blueberry-pudding-27562.herokuapp.com/productByKeys', {
+        fetch('https://polar-plateau-24198.herokuapp.com/productByKeys', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

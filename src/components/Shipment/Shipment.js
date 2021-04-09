@@ -12,7 +12,7 @@ const Shipment = () => {
     const savedCart = getDatabaseCart();
     const orderDetails = { ...loggedInUser, products: savedCart, shipment: data, orderTime: new Date() };
 
-    fetch('https://blueberry-pudding-27562.herokuapp.com/addOrder', {
+    fetch('https://polar-plateau-24198.herokuapp.com/addOrder', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

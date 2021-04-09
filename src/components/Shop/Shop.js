@@ -13,7 +13,7 @@ const Shop = () => {
 
 
     useEffect(() => {
-        fetch('https://blueberry-pudding-27562.herokuapp.com/products')
+        fetch('https://polar-plateau-24198.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
@@ -23,7 +23,7 @@ const Shop = () => {
     useEffect(() => {
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
-        fetch('https://blueberry-pudding-27562.herokuapp.com/productByKeys', {
+        fetch('https://polar-plateau-24198.herokuapp.com/productByKeys', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

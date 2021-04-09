@@ -6,7 +6,7 @@ const ProductDetail = () => {
     const { productKey } = useParams();
     const [product, setProduct] = useState({});
     useEffect(() => {
-        fetch('https://blueberry-pudding-27562.herokuapp.com/product/' + productKey)
+        fetch('https://polar-plateau-24198.herokuapp.com/product/' + productKey)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [productKey])
